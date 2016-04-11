@@ -52,7 +52,7 @@
                 <outputDirectory>${deploy.target.dir}</outputDirectory>
                 <archive>
                     <manifest>
-                        <mainClass>teamsix.App</mainClass>
+                        <mainClass>bill.App</mainClass>
                     
                         <classpathPrefix>${lib.dir}/</classpathPrefix>
                     </manifest>
