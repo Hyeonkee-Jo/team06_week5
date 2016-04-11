@@ -118,7 +118,7 @@
     <jar.name>app</jar.name>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 	<sonar.dynamicAnalysis>true</sonar.dynamicAnalysis>
-	<sonar.jacoco.excludes>${project.basedir}/src/main/java/bill/App.java</sonar.jacoco.excludes>
+	<sonar.exclusions>${project.basedir}/src/main/java/com/connecture/RelationTypeEnum.java</sonar.exclusions>
   </properties>
 
   <dependencies>
