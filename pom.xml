@@ -116,9 +116,6 @@
     <deploy.target.dir>c:/myproject</deploy.target.dir>
     <lib.dir>lib</lib.dir>
     <jar.name>app</jar.name>
-    <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
-	<sonar.dynamicAnalysis>true</sonar.dynamicAnalysis>
-	<sonar.exclusions>${project.basedir}/src/main/java/bill/App.java</sonar.exclusions>
   </properties>
 
   <dependencies>
