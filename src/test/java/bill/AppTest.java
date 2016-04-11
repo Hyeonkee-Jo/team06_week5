@@ -1,5 +1,8 @@
 package bill;
 
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,6 +14,17 @@ public class AppTest{
 	  
 	private Cost c;
 	
+	public static void main(String[] args) {
+	      Logger logger = Logger.getLogger("Bill");
+	      @SuppressWarnings("resource")
+	      Scanner scan = new Scanner(System.in);
+	      String plan = scan.nextLine();
+	      int traffic = scan.nextInt();
+	      int num = scan.nextInt();
+	      
+	      Cost cost = new Cost(plan, traffic, num);
+	      logger.log(Level.INFO, cost.toString());
+	   }
 	@Before
 	public void setUp(){
 		c = new Cost(null, 0, 0);
