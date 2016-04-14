@@ -77,6 +77,12 @@ public class AppTest{
 		c = new Cost();
 		assertEquals("29.95$", c.toString());
 	}
+	
+	@Test
+	public void testGoldSetGrade() {
+		gp.setGrade("GOLD");
+		assertEquals("GOLD", gp.getGrade());
+	}
 	@Test
 	public void testGoldOnelineBelowThau() {
 		c = new Cost("G", 700, 1);
@@ -123,6 +129,12 @@ public class AppTest{
 	public void testGoldOverThreelineOverThau() {
 		c = new Cost("G", 1200, 4);
 		assertEquals("173.95$", c.toString());
+	}
+	
+	@Test
+	public void testSilverSetGrade() {
+		sp.setGrade("SILVer");
+		assertEquals("SILVer", sp.getGrade());
 	}
 	
 	@Test

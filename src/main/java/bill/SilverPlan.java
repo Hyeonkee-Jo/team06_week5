@@ -30,4 +30,9 @@ public class SilverPlan extends Plan {
 		return this.overflowtrafficcost;
 	}
 	
+	@Override
+	public String getGrade() {
+		return this.grade;
+	}
+	
 }

@@ -36,6 +36,11 @@ public class GoldPlan extends Plan{
 	{
 		return this.basetraffic;
 	}
+	
+	@Override
+	public String getGrade() {
+		return this.grade;
+	}
 
 
 }

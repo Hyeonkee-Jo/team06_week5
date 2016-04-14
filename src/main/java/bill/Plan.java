@@ -13,6 +13,7 @@ public abstract class Plan {
 	public abstract int getBaseTraffic();
 	public abstract double getAddLineCost();
 	public abstract double getOverflowTrafficCost();
+	public abstract String getGrade();
 	
 	public void setBasecost(double basecost) {
 		this.basecost = basecost;
@@ -29,8 +30,11 @@ public abstract class Plan {
 	}
 
 	public void setOverflowTrafficCost(double overflowtrafficcost) {
-		this.overflowtrafficcost = overflowtrafficcost;
-		
+		this.overflowtrafficcost = overflowtrafficcost;	
+	}
+	
+	public void setGrade(String grade) {
+		this.grade = grade;
 	}
 	
 }
