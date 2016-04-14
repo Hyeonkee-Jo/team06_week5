@@ -69,7 +69,7 @@ public class AppTest{
 	@Test
 	public void testSilverPlanSetBaseTraffic() {
 		sp.setBaseTraffic(550);
-		assertEquals(500, sp.getBaseTraffic());
+		assertEquals(550, sp.getBaseTraffic());
 	}
 	
 	@Test
