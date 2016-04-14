@@ -75,7 +75,7 @@ public class AppTest{
 	@Test
 	public void testDefaultCostclass() {
 		c = new Cost();
-		assertEquals("29.95", c.toString());
+		assertEquals("29.95$", c.toString());
 	}
 	@Test
 	public void testGoldOnelineBelowThau() {
