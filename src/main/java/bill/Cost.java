@@ -1,5 +1,9 @@
 package bill;
 
+import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Cost {
 	
 	Plan plan;
@@ -52,6 +56,18 @@ public class Cost {
 			calculateCost = ( addlineCost * 2 ) + ( 5 * (numofLine-3) );
 				
 		return calculateCost;
+	}
+	
+	public void scanNprint() {
+		Logger logger = Logger.getLogger("Bill");
+	      @SuppressWarnings("resource")
+	      Scanner scan = new Scanner(System.in);
+	      String plan = scan.nextLine();
+	      int traffic = scan.nextInt();
+	      int num = scan.nextInt();
+	      
+	      Cost cost = new Cost(plan, traffic, num);
+	      logger.log(Level.INFO, cost.toString());
 	}
 
 }
