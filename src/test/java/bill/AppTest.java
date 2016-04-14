@@ -9,7 +9,8 @@ import org.junit.Test;
  */
 public class AppTest{
 	  
-	private Plan gp, sp;
+	private Plan gp;
+	private Plan sp;
 	private Cost c;
 
 	@Before
@@ -28,10 +29,10 @@ public class AppTest{
 		gp.setOverflowTrafficCost(0.5);
 		gp.setBaseTraffic(1100);
 		
-		assertTrue(50 == gp.getBasecost());
-		assertTrue(15 == gp.getAddLineCost());
-		assertTrue(0.5 ==gp.getOverflowTrafficCost());
-		assertTrue(1100 == gp.getBaseTraffic());
+		assertTrue(gp.getBasecost() == 50);
+		assertTrue(gp.getAddLineCost() == 15);
+		assertTrue(gp.getOverflowTrafficCost() == 0.5);
+		assertTrue(gp.getBaseTraffic() == 1100);
 			
 	}
 	
@@ -42,10 +43,10 @@ public class AppTest{
 		sp.setOverflowTrafficCost(0.6);
 		sp.setBaseTraffic(550);
 		
-		assertTrue(30 == sp.getBasecost());
-		assertTrue(22 == sp.getAddLineCost());
-		assertTrue(0.6 == sp.getOverflowTrafficCost());
-		assertTrue(550 == sp.getBaseTraffic());
+		assertTrue(sp.getBasecost() == 30);
+		assertTrue(sp.getAddLineCost() == 22);
+		assertTrue(sp.getOverflowTrafficCost() == 0.6);
+		assertTrue(sp.getBaseTraffic() == 550);
 			
 	}
 	

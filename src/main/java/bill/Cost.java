@@ -11,7 +11,7 @@ public class Cost {
 		this.traffic = traffic;
 		this.num=num;
 		if(("S").equals(p)){
-			plan = new SilverPlan();		
+			plan = new SilverPlan();	
 		}
 		else if(("G").equals(p)) {
 			plan = new GoldPlan();
