@@ -9,13 +9,45 @@ import org.junit.Test;
  */
 public class AppTest{
 	  
+	private Plan gp, sp;
 	private Cost c;
 
 	@Before
 	public void setUp(){
 		c = new Cost(null, 0, 0);
+		gp = new GoldPlan();
+		sp = new SilverPlan();
 	}
 	
+	
+	@Test
+	public void testGoldPlanSetting() {
+		
+		gp.setBasecost(50);
+		gp.setAddLineCost(15);
+		gp.setOverflowTrafficCost(0.5);
+		gp.setBaseTraffic(1100);
+		
+		assertTrue(50 == gp.getBasecost());
+		assertTrue(15 == gp.getAddLineCost());
+		assertTrue(0.5 ==gp.getOverflowTrafficCost());
+		assertTrue(1100 == gp.getBaseTraffic());
+			
+	}
+	
+	@Test
+	public void testSilverPlanSetting() {
+		sp.setBasecost(30);
+		sp.setAddLineCost(22);
+		sp.setOverflowTrafficCost(0.6);
+		sp.setBaseTraffic(550);
+		
+		assertTrue(30 == sp.getBasecost());
+		assertTrue(22 == sp.getAddLineCost());
+		assertTrue(0.6 == sp.getOverflowTrafficCost());
+		assertTrue(550 == sp.getBaseTraffic());
+			
+	}
 	
 	@Test
 	public void testGoldOnelineBelowThau() {
