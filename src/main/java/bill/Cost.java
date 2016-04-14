@@ -6,12 +6,6 @@ public class Cost {
 	int traffic;
 	int num;
 	
-	public Cost() {
-		plan = new SilverPlan();
-		traffic = 350;
-		num = 1;
-	}
-	
 	public Cost(String p, int traffic , int num) {
 		
 		this.traffic = traffic;
