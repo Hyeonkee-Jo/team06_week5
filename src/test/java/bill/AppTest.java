@@ -83,6 +83,31 @@ public class AppTest{
 		gp.setGrade("GOLD");
 		assertEquals("GOLD", gp.getGrade());
 	}
+	
+	@Test
+	public void testGoldlineOverflowTrafficCost() {
+		c = new Cost("G", 1200, 2);
+		assertEquals("90.0$", c.printCalculateOverflowTrafficCost());
+	}
+	
+	@Test
+	public void testGoldlineAddlineCost() {
+		c = new Cost("G", 1200, 4);
+		assertEquals("34.0$", c.printCalculateAddlineCost());
+	}
+	
+	@Test
+	public void testSilverlineOverflowTrafficCost() {
+		c = new Cost("S", 700, 2);
+		assertEquals("108.0$", c.printCalculateOverflowTrafficCost());
+	}
+	
+	@Test
+	public void testSilverlineAddlineCost() {
+		c = new Cost("S", 700, 4);
+		assertEquals("48.0$", c.printCalculateAddlineCost());
+	}
+	
 	@Test
 	public void testGoldOnelineBelowThau() {
 		c = new Cost("G", 700, 1);

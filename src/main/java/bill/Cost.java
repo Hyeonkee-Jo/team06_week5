@@ -59,5 +59,13 @@ public class Cost {
 				
 		return calculateCost;
 	}
+	
+	public String printCalculateOverflowTrafficCost() {
+		return this.calculateoverflowtrafficcost()+"$";
+	}
+	
+	public String printCalculateAddlineCost() {
+		return this.calculateAddlineCost()+"$";
+	}
 
 }
