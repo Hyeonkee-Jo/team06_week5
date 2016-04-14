@@ -25,53 +25,51 @@ public class AppTest{
 	public void testGoldPlanSetBaseCost() {
 		
 		gp.setBasecost(50);
-		assertTrue(gp.getBasecost() == (double)50);
+		assertEquals(50.00, gp.getBasecost(), 0.01);
 	}
 	
 	@Test
 	public void testGoldPlanSetAddLineCost(){
 		gp.setAddLineCost(15);
-		assertTrue(gp.getAddLineCost() == (double)15);
+		assertEquals(15.00, gp.getAddLineCost(), 0.01);
 	}
 	
 	@Test
 	public void testGoldPlanSetOverflowTrafficCost() {
 		gp.setOverflowTrafficCost(0.5);
-		assertTrue(gp.getOverflowTrafficCost() == (double)0.5);
+		assertEquals(0.5, gp.getOverflowTrafficCost(), 0.1);
 		
 	}
 	
 	@Test
 	public void testGoldPlanSetBaseTraffic() {
 		gp.setBaseTraffic(1100);
-		assertTrue(gp.getBaseTraffic() == 1100);
+		assertEquals(1100, gp.getBaseTraffic());
 		
 	}
 	
 	@Test
 	public void testSilverPlanSetBaseCost() {
 		sp.setBasecost(30);
-		assertTrue(sp.getBasecost() == (double)30);
-		
-			
+		assertEquals(30.00, sp.getBasecost(), 0.01);
 	}
 	
 	@Test
 	public void testSilverPlanSetAddLineCost(){
 		sp.setAddLineCost(22);
-		assertTrue(sp.getAddLineCost() == (double)22);
+		assertEquals(22.00, sp.getAddLineCost(), 0.01);
 	}
 	
 	@Test
 	public void testSilverPlanSetOverflowTrafficCost() {
 		sp.setOverflowTrafficCost(0.6);
-		assertTrue(sp.getOverflowTrafficCost() == (double)0.6);
+		assertEquals(0.6, sp.getOverflowTrafficCost(), 0.1);
 	}
 	
 	@Test
 	public void testSilverPlanSetBaseTraffic() {
 		sp.setBaseTraffic(550);
-		assertTrue(sp.getBaseTraffic() == 550);
+		assertEquals(500, sp.getBaseTraffic());
 	}
 	
 	@Test
